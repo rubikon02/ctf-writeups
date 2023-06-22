@@ -1,0 +1,18 @@
+Hey there,
+
+I'm having a bit of trouble with the OAuth client registration process and I'm hoping you can help me out. I'm trying to integrate a new client app for mixing elixirs and potions into our system, but I keep getting an error message when I try to register it. I've checked all the parameters and made sure the redirect URI is correct, but no luck so far.
+
+HTTP request
+POST /apps/oauth2/clients HTTP/1.1
+Host: nextcloud.ctf:8081
+Content-Type: application/json
+Content-Length: 86
+Cookie: ocqpfobax3l0=ea40d3c44aebc7c3d2d060ce0c74f7c4; oc_sessionPassphrase=mzJr4dxugNOXA34YgaivUEgs8P4p%2BEju7qBoC87qZ9S4Cu2lUGAo50U3HiuEw3CAfGgusiTSBSMA8s03rgJY0PcVgGbGJEbyNKV3EdvhxL5lXP83qw8xjBQM6qTj083j; nc_sameSiteCookielax=true; nc_sameSiteCookiestrict=true; nc_username=admin; nc_token=RhnpFe88vZTezlB9J0FmEj9S4lrX%2FLyl; nc_session_id=ea40d3c34aebb7c3d2d060ce0c74f7c4
+
+{"name":"alchemy-mixer-ng","redirectUri":"https://alchemy-mixer-ng.ctf/auth/callback"}
+
+Getting this new client app up and running is super important for my work in alchemy, so any help you can provide would be greatly appreciated.
+
+Thanks,
+
+Twardowski

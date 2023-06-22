@@ -1,0 +1,14 @@
+Dear Boruta,
+
+I hope this email finds you well. As you know, I am currently unavailable, and you are taking on some of my responsibilities during my absence. I understand that you have been tasked with finishing SSO configuration. It's important to ensure a smooth user experience and seamless authentication process. I wanted to provide you with detailed information on what is the current status and how to finish the configuration of Single Sign-On (SSO) with our internal Identity Provider (IdP).
+
+For some reason http://idp.midsummer.corp stopped working lately and I could not bring it back online. You should be able to test if its working on application side by sending POST requets with crafted SAML Response. You can use any online tool that you will find for that. Application is matching "alias" with username and "role" attribute with group membership. I have restricted SSO usage to "sso" group until the configuration is finished and currenlty only my account is in this group.
+
+Please remember to provide appropriate information in SAML Repsonse. You can send POST request to the Service Provider (SP) to "/apps/user_saml/saml/acs" endpoint to test if it's working. And one more thing - application will require saml_data cookie set in request. You can use this one:
+
+saml_data=Nzk2MDRiOTg0YmIxYzg3N2JiOGZkMjc3YzczMWEwNWM4OGVlNjdmNDBmMDY0N2ZmNTEwYjdmYmM3ZjQwOTkyYmY0NTQ5OGZmOTMyOTU0NTVkNTQ2MDcwOTQxYTg4NmEwNzlhM2VlYzZjODU5OTI1MGQ5Zjg2MDQ1ZTZlYzdmYWY2YzNmYjMwN2E2Yzg0MWNiN2QwYzY4NDVmNThjN2QwOTdlMGRlOTQyNDRkOGEzMzMwYmYwNmEyOGVhZGRjNDdhMmQyNzQ0NzRiY2M3MGU4YTc2ZGU0ZTdkOGY3M2RmOWF8Mjc2ODNmMTE0NTVjOTgzOTNmZWZmNGM3ODMwOGU4OTl8NmNlZTUyOTRmMmU4MzRjMTZlOGQwNjk0Yjk2MjU0N2E2ODhmNDhkM2UxYTFmYWY3YjkyNWExZjhiOGEyZTQ4NGJjNmYyYjk4MThmOWU2YTY2ZTgzMzViZGRiMmU3MzQxNjEwMzk3NmM5YjAxNzkxYjk5MjgzMThiMzI2ZjJkMzR8Mw%3D%3D
+
+I hope this information is helpful to you. I will be unavailable for some time, but I trust that you will handle this configuration effectively. I appreciate your assistance during my absence and look forward to working with you again soon.
+
+Best regards,
+Twardowski
